@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-transform: uppercase;
+    font-size: 11px;
+        /* border: whitesmoke solid 10px; */
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    /* border: hotpink solid 2px; */
+}
+
+image {
+    height: 100ch;
+    overflow: hidden;
+    /* border:rgb(37, 187, 0) solid 2px; */
+}
+
+.content {
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 35%;
+    min-width: 400px;
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 3%;
+    /* border: blue solid 2px; */
+}
+
+.description, .info, .issue {
+    padding-top: 10%;
+}
+
+p, h6 {
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+h6 {
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+a:hover {
+    color:rgb(181, 24, 47);
+}
+
+@media only screen and (max-width:600px) and (orientation: portrait) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-transform: uppercase;
+        font-size: 13px;
+        /* border: orangered solid 1px; */
+    }
+
+    .background {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        position: absolute;
+        /* border: green solid 3px; */
+    }
+
+    img {
+        width: 100vh;
+        height: 100vh;
+        transform: rotate(90deg);
+        /* border: red dashed 2px; */
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        position: absolute;
+        padding-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+        min-width: 200px;
+       /* border: blue solid 1px; */
+
+    }
+
+    p {
+        text-align: left;
+    }
+
+    p, h6 {
+        font-weight: lighter;
+        font-size: .7em;
+    }
+    
+    .info {
+        width: 100%;
+         /* border: springgreen solid 1px; */
+
+    }
+}
